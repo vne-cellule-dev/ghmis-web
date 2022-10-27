@@ -78,6 +78,7 @@ export class ActCategoryFormComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    
     this.initForm();
     if (this.actCategoryId) this.initUpdateAction();
   }

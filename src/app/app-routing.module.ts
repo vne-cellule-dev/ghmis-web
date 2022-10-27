@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'user/password-changing/:id', component: ChangePasswordComponent, canActivate: [AuthenticationGuard] },
 
   {
-    path: '', component: LayoutComponent, canActivate: [AuthenticationGuard], children: [
+    path: '', component: LayoutComponent, canActivate: [AuthenticationGuard],  children: [
 
       { path: 'home', component: HomeComponent },
       

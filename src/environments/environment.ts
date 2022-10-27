@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8082',
-  baseUrl2: 'http://localhost:8095',
+  baseUrl: 'http://localhost:8080',
+  baseUrl2: 'http://localhost:8080',
   documentFooter: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
   logo: 'assets/img/medical-logo-design.jpeg',
   devise : 'Fcfa',

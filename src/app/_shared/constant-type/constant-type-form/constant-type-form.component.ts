@@ -6,7 +6,7 @@ import { ConstantDomainService } from 'src/app/_services/constant-domain.service
 import { ConstantTypeService } from 'src/app/_services/constant-type.service';
 import { UnitOfMeasureService } from 'src/app/_services/unit-of-measure.service';
 import { AlertService } from 'src/app/_utility/alert/alert.service';
-import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
+// import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
 import { invalidformControls } from 'src/app/_utility/form/invalid-form-controls';
 
 @Component({
@@ -126,7 +126,8 @@ export class ConstantTypeFormComponent implements OnInit {
       constantDomain: new FormControl(null, Validators.required),
       description: new FormControl(''),
       resultType: new FormControl(null, Validators.required),
-      significantDigits: new FormControl('', [Validators.required, ValidateInt]),
+      // significantDigits: new FormControl('', [Validators.required, ValidateInt]),
+      significantDigits: new FormControl('', [Validators.required]),
       unitOfMesure: new FormControl(null, Validators.required),
       active: new FormControl('Y', Validators.required),
 
@@ -229,7 +230,8 @@ export class ConstantTypeFormComponent implements OnInit {
       active: new FormControl('Y', Validators.required),
       constantType: new FormControl(0),
       id: new FormControl(0),
-      order: new FormControl('', [Validators.required, ValidateInt]),
+      // order: new FormControl('', [Validators.required, ValidateInt]),
+      order: new FormControl('', [Validators.required]),
       value: new FormControl('', Validators.required),
     });
 

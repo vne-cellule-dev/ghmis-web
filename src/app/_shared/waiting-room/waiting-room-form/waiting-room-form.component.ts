@@ -5,7 +5,7 @@ import { WaitingRoom } from 'src/app/_models/waitingRoom.model';
 import { medicalServiceService } from 'src/app/_services/medicalService.service';
 import { WaitingRoomService } from 'src/app/_services/waiting-room.service';
 import { AlertService } from 'src/app/_utility/alert/alert.service';
-import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
+// import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
 import { invalidformControls } from 'src/app/_utility/form/invalid-form-controls';
 
 @Component({
@@ -90,7 +90,8 @@ export class WaitingRoomFormComponent implements OnInit {
     this.form = new FormGroup({
       id: new FormControl(0),
       name: new FormControl('', Validators.required),
-      capacity: new FormControl('', ValidateInt),
+      // capacity: new FormControl('', ValidateInt),
+      capacity: new FormControl(''),
       active: new FormControl('Y', Validators.required),
 
     });

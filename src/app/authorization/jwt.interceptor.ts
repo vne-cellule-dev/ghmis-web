@@ -47,7 +47,8 @@ export class JwtInterceptor implements HttpInterceptor {
 
         return next.handle(request);
 
-
+        //userName : VIRTUAL_NETWORK
+        //password : VIRTUALADMIN123
         // eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZhaW51c2UiLCJleHAiOjE2MDM4Njc3MDksImlhdCI6MTYwMzg0OTcwOX0.x7hKJb_gN4JPFA76rs6IxsbxU5qCbPHDVt9BrRlUQQ2fH7DnUSk-fcpTobofdoWlqiqoKJGcPbIYDLF5X7cTUw
 
     }

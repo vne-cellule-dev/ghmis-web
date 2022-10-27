@@ -13,6 +13,7 @@ export interface Patient {
     numberOfChildren: number;
     address: string;
     cityId: number;
+    country : number;
     cellPhone1: string;
     cellPhone2: string;
     email: string;

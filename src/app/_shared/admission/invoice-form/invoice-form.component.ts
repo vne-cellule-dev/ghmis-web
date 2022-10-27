@@ -236,6 +236,8 @@ export class InvoiceFormComponent implements OnInit {
             this.form.get('invoiceDate').setValue(dateOutputFormat(new Date()));
 
             this.insuredService.findByPatientId(admission.patient).subscribe(res => {
+              console.log(res);
+              
               this.patientInsurances = res;
             })
 

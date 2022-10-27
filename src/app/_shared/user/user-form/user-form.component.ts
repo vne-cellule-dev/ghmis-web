@@ -140,8 +140,7 @@ export class UserFormComponent implements OnInit {
       this.alertService.error('Formulaire non valid');
     }
   }
-
-
+  
   /**
   * action to Do when  ckick on cancel button
   */

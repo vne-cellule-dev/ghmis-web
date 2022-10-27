@@ -22,7 +22,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-        <li class="nav-item" *ngIf="accessHomePage"> 
+        <li class="nav-item" > 
           <a routerLink="/home" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-home"></i>
             <p>
@@ -31,10 +31,10 @@
           </a>
         </li>
 
-        <span *ngIf="accessHomeModule">
+        <span >
         <li class="nav-header">MODULE ACCUEIL</li>
        
-        <li class="nav-item " *ngIf="listPatient">
+        <li class="nav-item " >
           <a routerLink="/patient/list" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-user-friends"></i>
             <p>
@@ -43,7 +43,7 @@
           </a>
         </li>
 
-        <li class="nav-item " *ngIf="listAdmission">
+        <li class="nav-item " >
           <a routerLink="/admission/list" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-person-booth"></i>
             <p>
@@ -51,7 +51,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item" *ngIf="listInvoice">
+        <li class="nav-item">
           <a routerLink="/admission/invoice/list" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-cash-register"></i>
             <p>
@@ -59,7 +59,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item" *ngIf="listInwaitingRoom">
+        <li class="nav-item" >
           <a routerLink="/waiting-room" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-chair"></i>
             <p>
@@ -67,7 +67,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item" *ngIf="listAppointment">
+        <li class="nav-item" >
           <a routerLink="/scheduler" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-calendar-alt"></i>
             <p>
@@ -101,7 +101,7 @@
         </li>
         </span>
 
-        <span *ngIf="">
+        <span >
         <li class="nav-header" >MODULE  HOSPITALISATION</li>
         <li class="nav-item">
           <a routerLink="/Hospitalisation" class="nav-link" routerLinkActive="active">
@@ -113,11 +113,11 @@
         </li>
         </span>
 
-        <span *ngIf="accessUserModule">
+        <span >
         
         <li class="nav-header" >MODULE UTILISATEUR</li>
 
-        <li class="nav-item" *ngIf="listUser">
+        <li class="nav-item" >
           <a routerLink="/user/list" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-user"></i>
             <p>
@@ -125,7 +125,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item" *ngIf="listRole">
+        <li class="nav-item" >
           <a routerLink="/role/list" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-users"></i>
             <p>
@@ -133,7 +133,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item" *ngIf="listPermission">
+        <li class="nav-item" >
           <a routerLink="/permission" class="nav-link" routerLinkActive="active">
             <i class="nav-icon fas fa-users-cog"></i>
             <p>

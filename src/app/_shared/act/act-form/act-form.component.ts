@@ -7,7 +7,7 @@ import { ActCodeService } from 'src/app/_services/act-code.service';
 import { ActFamilyService } from 'src/app/_services/act-family.service';
 import { ActService } from 'src/app/_services/act.service';
 import { AlertService } from 'src/app/_utility/alert/alert.service';
-import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
+// import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
 import { invalidformControls } from 'src/app/_utility/form/invalid-form-controls';
 
 @Component({
@@ -116,7 +116,8 @@ export class ActFormComponent implements OnInit {
       name: new FormControl('', Validators.required),
       codification: new FormControl('', Validators.required),
       active: new FormControl('Y'),
-      coefficient: new FormControl(null,[Validators.required, ValidateInt]),
+      // coefficient: new FormControl(null,[Validators.required, ValidateInt]),
+      coefficient: new FormControl(null,[Validators.required]),
       actCode: new FormControl(null, Validators.required) ,
       actCategory: new FormControl(null, Validators.required),
       actGroup: new FormControl(null, Validators.required) ,

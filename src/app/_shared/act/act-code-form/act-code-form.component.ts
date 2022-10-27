@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ActCode } from 'src/app/_models/actCode.model';
 import { ActCodeService } from 'src/app/_services/act-code.service';
 import { AlertService } from 'src/app/_utility/alert/alert.service';
-import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
+// import { ValidateInt } from 'src/app/_utility/CustomValidators/int.Validator';
 import { invalidformControls } from 'src/app/_utility/form/invalid-form-controls';
 
 @Component({
@@ -90,7 +90,8 @@ export class ActCodeFormComponent implements OnInit {
     this.form = new FormGroup({
       id: new FormControl(0),
       name: new FormControl('', Validators.required),
-      value: new FormControl('', [Validators.required, ValidateInt]),
+      // value: new FormControl('', [Validators.required, ValidateInt]),
+      value: new FormControl('', [Validators.required]),
       active: new FormControl('Y', Validators.required),
       
     });

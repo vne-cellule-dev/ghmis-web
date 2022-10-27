@@ -137,6 +137,7 @@ export class PatientListComponent implements OnInit {
     this.initForm();
     this.listPatientComponent = (this.component=='ListPatientComponent') ? true : false; 
     this.schedulerComponent = (this.component=='SchedulerComponent') ? true : false;
+    this.getPatients();
   }
 
 
@@ -170,6 +171,8 @@ export class PatientListComponent implements OnInit {
 
     this.patientService.findAll(data).subscribe(
       res => {
+        console.log(res);
+        
         if (res) {
           console.log(res['content'])
           this.loading = false;

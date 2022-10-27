@@ -99,5 +99,4 @@ export class UserService {
     return this.http.get<any>(environment.baseUrl2 + '/account/users_name');
   }
 
-
 }

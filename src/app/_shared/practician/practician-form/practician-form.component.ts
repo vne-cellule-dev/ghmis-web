@@ -110,7 +110,10 @@ export class PracticianFormComponent implements OnInit {
     if (this.practicianId) this.initUpdateAction();
     this.medicalService.getIdAndName().subscribe(res => { this.services = res; });
     this.specialityService.getIdAndName().subscribe(res => { this.specialities = res; });
-    this.userService.getIdAndName().subscribe(res => { this.users = res });
+    this.userService.getIdAndName().subscribe(res => { 
+      console.log(res); 
+      this.users = res 
+    });
     
     this.signature = this.sanitizer.bypassSecurityTrustUrl("C:/Users/Dabre Adjaratou/eclipse-workspace/gmhis/uploads/5i7YcfDU3d2ajmm.png");
   }
@@ -121,7 +124,7 @@ export class PracticianFormComponent implements OnInit {
   initForm() {
     this.form = new FormGroup({
       id: new FormControl(0),
-      user: new FormControl(null, Validators.required),
+      user: new FormControl(1, ),
       speciality: new FormControl(null, Validators.required),
       service: new FormControl(null, Validators.required),
       signature: new FormControl(null),
