@@ -269,9 +269,6 @@ export class PatientConstantFormComponent implements OnInit {
     } else {
       this.alertService.error('Formulaire non valid');
     }
-
-
-
   }
 
   /**

@@ -265,7 +265,7 @@ export class CertificateFollowUpComponent implements OnInit {
         }
       });
     } else {
-      this.alertService.error('Impossible de mofier un certificat qui a deja été crée, veillez creer un autre.')
+      this.alertService.error('Impossible de modifier un certificat qui a deja été crée, veillez creer un autre.')
     }
   }
 

@@ -165,20 +165,20 @@
 
           </div>
         </div>
-        <div *ngIf='waitingRoom'>
+        <div >
           <!-- <div class="row"> -->
           <div class="py-1 col-lg-5 col-md-6 col-sm-12">
-            <a routerLink="/patient-constant/list/{{patientId}}"
+            <a routerLink="/patient-constant/list/1"
               class="btn btn-block btn-warning btn-sm font-weight-bold text-nowrap text-white"
-              [ngClass]="{'disabled': !patientId }">
+             >
               <i class="fas fa-stethoscope mr-2"></i>
               constantes
             </a>
           </div>
           <div class="py-1 col-lg-5 col-md-6 col-sm-12">
-            <a routerLink="/medical-folder/{{patientId}}/{{selectedItemId}}"
+            <a routerLink="/medical-folder/{{1}}/{{selectedItemId}}"
               class="btn btn-block btn-primary btn-sm font-weight-bold text-nowrap text-white"
-              [ngClass]="{'disabled': !patientId }">
+              >
               <i class="fas fa-folder-plus mr-2"></i>
               Dossier
             </a>

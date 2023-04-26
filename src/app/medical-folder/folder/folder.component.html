@@ -1,23 +1,23 @@
 <div class="card">
     <div class="card-header">
-        <div class="row" *ngIf="patient">
+        <div class="row" >
             <div class="col-lg-3">
                 <h4 class="text-muted">Dossier patient</h4>
             </div>
-            <div class="col-lg-5 text-center">
+            <!-- <div class="col-lg-5 text-center">
                 <div class="text-capitalized"> <strong>{{patient.firstName+' '+patient.lastName}}</strong> - né(e) le
                     {{patient.birthDate | date : 'dd/MM/yyy'}}
-                    <!--14 ans -->
+                    14 ans
                 </div>
                 <div>tel: {{patient.contact1}} - {{patient.profession}} - {{patient.numberOfChildren }} enfants</div>
-                <!-- <div>175cm, 71kg</div> -->
+                <div>175cm, 71kg</div>
             </div>
             <div class="col-lg-4 text-center">
                 <div><u>Correspondants</u></div>
                 <div>
                     <div> {{patient.correspondant}}: {{patient.correspondantCellPhone}}</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="card-body">

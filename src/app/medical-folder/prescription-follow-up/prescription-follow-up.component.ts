@@ -136,6 +136,14 @@ export class PrescriptionFollowUpComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    console.log(JSON.stringify("id : null, dosage : deux matin deux le soir, drug : paracetamol, qty : 3, duration : 3 semaine "));
+    // {
+    //   id: new FormControl(item.id),
+    //   dosage: new FormControl(item.dosage),
+    //   drug: new FormControl(item.drug),
+    //   qty: new FormControl(item.qty),
+    //   duration: new FormControl(item.duration)
+    // }
     this.initForm();
     this.theraClassService.getIdAndName().subscribe(res => { this.therapeuticClasses = res; });
     this.pharmaFormService.getIdAndName().subscribe(res => { this.pharmaForms = res; });
